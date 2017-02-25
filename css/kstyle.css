@@ -1,0 +1,376 @@
+@font-face {
+    font-family: 'reswysokr';
+    src: url('../fonts/reswysokr/reswysokr-webfont.woff2') format('woff2'),
+         url('../fonts/reswysokr/reswysokr-webfont.woff') format('woff'),
+         url('../fonts/reswysokr/reswysokr-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+Dark grey (background, text) #252525
+Light grey (nav bar) #e0e0e0
+Light pink () #e5b3ac
+Dark pink () #b25f5f
+*/
+
+
+/*----------------------------------------------------------
+------------------------- LOADER -------------------------*/
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: #252525;
+	text-align: center;
+}
+.loader i {
+	margin-top: 35%;
+	color: #e0e0e0;
+}
+
+
+/*----------------------------------------------------------
+-------------------------- MAIN --------------------------*/
+body {
+	font-family: 'Assistant', sans-serif;
+	background-color: #252525;
+	color: #000;
+	font-weight: 200;
+}
+
+h1, h2, h3 {
+	color: #e5b3ac;
+	font-family: 'reswysokr',sans-serif;
+	text-align: center;
+}
+h1 {
+	font-size: 9em;
+	margin-top: -3%;
+}
+
+h2 { 
+	padding: 5% 0 3% 0; 
+	font-size: 5.3em;
+	}
+
+h3 { 
+	padding: 8% 0 12% 0;
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: 400;
+	font-family: 'Assistant', sans-serif;
+	color: ##b25f5f;
+}
+
+a { text-decoration: none;}
+
+.btn-default {
+	font-size: 1.4em;
+	padding: 1% 4%;
+	background-color: #494949;
+	color: #fff;
+}
+main {
+	overflow: hidden;
+	background-color: #252525;
+	color: #fff;
+	padding-bottom: 20%;
+}
+main p {
+	font-family: 'Assistant',sans-serif;
+	font-size: 1.3em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+
+
+/*----------------------------------------------------------
+----------------------- HERO IMAGE -----------------------*/
+.hero {
+    background-image:url('../media/images/main.jpg');
+    background-size:cover;
+    background-color: #EEEEEE;
+    height:450px;
+    margin-top: 50px;
+  }
+.fill {
+	width:100%;
+	height:450px;
+	background-position:center;
+	background-size:cover;
+}
+img .hero {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+/*----------------------------------------------------------
+----------------------- NAVIGATION -----------------------*/
+.navbar {
+	font-size: 1.2em;
+	background-color: #E0E0E0;
+	margin: 0;
+	padding: 0 5%;
+	vertical-align: center;
+	box-shadow: 0 -10px 50px -6px #000;
+}
+
+.navbar-brand { padding: 0 15px; }
+.navbar-brand>img { display: inline; }
+
+.navbar-text { 
+	padding: 17px 0;
+	display: inline;
+	margin: 0;
+	color: #252525;
+	font-size: 1em;
+}
+
+nav ul { margin-top: 5px; }
+
+nav a:link { color: #252525; }
+
+nav a:visited { color: #252525; }
+
+nav a:hover, nav a:focus { color: #b25f5f; }
+
+
+
+
+/*----------------------------------------------------------
+-------------------------- INTRO --------------------------*/
+.intro img { 
+	width: 60%;
+	border-style: solid;
+    border-width: 4px;
+    margin-top: 5%;
+    border-color: #e5b3ac;
+}
+.intro { padding: 0 0 5% 0; }
+#intro p { 
+	text-align: left;
+	padding: 2% 2% 0 2%; 
+}
+.intro .btn { 
+	margin-top: 5%; 
+}
+
+
+
+/*----------------------------------------------------------
+------------------------ SKILLS -------------------------*/
+.stripe { 
+	background-color: #f4f4f4; 
+	color: #252525;
+	padding: 2% 0 5% 0;
+	margin: 5% 0 10% 0;
+}
+.skill img {
+	width: 90%;
+	margin: 0 auto;
+	border-style: solid;
+    border-width: 3px;
+    border-color: #b25f5f;
+}
+
+.skill {
+	margin: 3% -5% 15% -5%;
+	text-align: center;
+	height:17em; 
+}
+
+.skill p {
+	margin: 3% 0 25% 0;
+	font-size: 1.3em;
+}
+.stripe h2 { color: #b25f5f; }
+.skill h3 { color: #252525; }
+
+
+/*----------------------------------------------------------
+------------------------ PROJECTS ------------------------*/
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.media__body {
+	background: rgba(37,37,37,0.7);
+	bottom: 0;
+	color: #fff;
+	font-size: 1em;
+	left: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 35% 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	-webkit-transition: .6s;
+	transition: .6s;
+	text-decoration: none;
+}
+
+.media__body:hover {
+	opacity: 1;
+}
+
+.media__body:after,.media__body:before {
+	border-bottom: none;
+	border-top: none;
+	left: 2em;
+	right: 2em;
+}
+
+.media__body:after {
+	border-left: none;
+	border-right: none;
+	bottom: 2em;
+	top: 2em;
+}
+
+.media__body:hover:after,.media__body:hover:before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.media__body h3 { 
+	padding: 8% 0 4% 0;
+	font-size: 2em;
+	color: #ffffff;
+}
+
+
+
+/*----------------------------------------------------------
+------------------------- FOOTER -------------------------*/
+footer {
+	font-family: 'Assistant',sans-serif;
+	text-align: left;
+	line-height: 1.5em;
+	background-color: #b25f5f;
+	padding: 10% 0 5% 0;	
+}
+
+footer h2 { 
+	padding-top: 0;
+	margin-top: 0;
+}
+
+form { padding:2%; }
+
+.form-group { padding:2%; }
+
+.form-control { font-size: 1.2em; }
+
+footer img { 
+	width: 80%; 
+	padding: 4%;
+	margin: 0 auto;
+}
+
+#social a { 
+	padding: 5% 0; 
+	display: inline-block;
+    opacity: 1;
+} 
+#social:hover { opacity: 0.8; }
+
+
+
+
+
+/*----------------------------------------------------------
+---------------------- MEDIA QUERIES ----------------------*/
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 991px) {
+	h1 { margin-top: -8%; }
+	.intro img { 
+		width: 100%;
+		margin-top: 10%;
+	}
+	#into p { 
+		font-size: 1em;
+		line-height: 1.2em; 
+		padding: 0 0 0 0;
+	}
+	h2 { font-size: 4.5em; }
+	
+	.skill img {  width: 80%; }
+	.skill { margin: 3% 0 15% 0; }
+	.email { display: none !important; }
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.navbar { padding: 0; }
+	.navbar-header, ul { display: inline-block; }
+	.navbar-text, .media__body p, .mobile, .intro img { display: none !important; }
+	#intro p { 
+		font-size: 1.2em;
+		text-align: center;
+		padding: 4% 10% 0 10%;
+	}
+	.skill img { width: 80%; }
+	.skill { 
+		margin: 0; 
+		width: 100%;
+		height: 18em;
+	}
+	.skill h3 { 
+		padding: 5% 0; 
+		font-size: 1.3em;
+	}
+	.skill p { font-size: 1.2em; }
+	.media__body {
+		bottom: auto;
+		left: auto;
+		opacity: 1;
+		overflow: visible;
+		padding: 0;
+		position: static;
+		top: auto;
+	}
+	.media__body h3 { 
+		font-size: 1.2em;
+		padding: 4% 0 18% 0;
+	}
+	footer .email { display: none; }
+	footer h2 { padding: 10% 0 1% 0; }
+	.form-group { padding:2%; } 
+	form { padding-bottom:8%; }
+}
+	
+	
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.fill { height:350px; margin: 0; }
+	.intro img { display: none !important; }
+	.intro { padding: 5% 0 15% 0; }
+	#intro p { padding: 0 5% 0 5%; }
+	.skill { 
+		height: 11.5em; 
+		margin: 0 -5% 0 5%; 
+	}
+	.skill img { width: 100%; }
+	.skill h3 { 
+		margin: 3% -10%; 
+		font-size: 1.1em;
+	}
+	h1 { margin-top: -10%; }
+	h2 { font-size: 3.5em; }
+}
+	
